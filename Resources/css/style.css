@@ -1,0 +1,73 @@
+body{
+    background-color: hsl(229, 24%, 87%);
+    font-family: 'Ubuntu', sans-serif;
+    margin: ;
+}
+
+
+.main-contianer{
+    
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-self: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 75vw;
+    transform: translate(-50%,-50%);
+    background-color: hsl(0, 0%, 100%);
+    gap: 6rem;
+    padding: 1rem 1rem;
+    padding-bottom: 0.3rem;
+    border-radius: 15px;
+    height: 36rem;
+}
+
+.multi-steps-container{
+    background-image: url("/Resources/multi-step-form-main/assets/images/bg-sidebar-desktop.svg");
+    padding: 2rem;
+    width: 13rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 87%;
+    z-index: 1;
+}
+
+.list-of-steps{
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+    align-items: center;
+}
+
+.div-in-number {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    
+    text-align: center;
+    background-color: hsl(243, 100%, 62%);
+    border: 2px solid white;
+}
+
+.div-in-number p{
+    margin-top: 0.4rem;
+    color: white;
+}
+
+#select-plan-container{
+    display: none;
+}
+
+#add-ons-container{
+    display: none;
+}
+
+#summary-container{
+    display: none;
+}
