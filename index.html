@@ -20,43 +20,63 @@
               <div id="number-one" class="div-in-number">
                 <p>1</p>
               </div>
-              <div id="step-one">
-                <p>STEP 1</p>
-                <p>YOUR INFO</p>
+              <div id="step-one" class="steps-designs">
+                <p class="step-number">STEP 1</p>
+                <p class="step-step">YOUR INFO</p>
               </div>
             </div>
             <div id="plan-select" class="list-of-steps">
               <div id="number-two" class="div-in-number">
                 <p>2</p>
               </div>
-              <div id="step-two">
-                <p>STEP 2</p>
-                <p>SELECT PLAN</p>
+              <div id="step-two" class="steps-designs">
+                <p class="step-number">STEP 2</p>
+                <p class="step-step">SELECT PLAN</p>
               </div>
             </div>
             <div id="add-ons" class="list-of-steps">
               <div id="number-three" class="div-in-number">
                 <p>3</p>
               </div>
-              <div id="step-three">
-                <p>STEP 3</p>
-                <p>ADD-ONS</p>
+              <div id="step-three" class="steps-designs">
+                <p class="step-number">STEP 3</p>
+                <p class="step-step">ADD-ONS</p>
               </div>
             </div>
             <div id="summary" class="list-of-steps">
               <div id="number-four" class="div-in-number">
                 <p>4</p>
               </div>
-              <div id="step-four">
-                <p>STEP 4</p>
-                <p>SUMMARY</p>
+              <div id="step-four" class="steps-designs">
+                <p class="step-number">STEP 4</p>
+                <p class="step-step">SUMMARY</p>
               </div>
             </div>
           </div>
         </div>
         <div id="personal-info-container" class="fill-form-container">
-          <h2>Personal info</h2>
-          <p>Please provide your name, email address and phone number.</p>
+          <h2 class="step-title">Personal info</h2>
+          <p class="step-description">
+            Please provide your name, email address and phone number.
+          </p>
+          <div class="user-details-container">
+            <div class="user-details-wrapper">
+              <label class="input-label" for="name">Name</label><br />
+              <input type="text" name="name" id="name" /><br />
+            </div>
+            <div class="user-details-wrapper">
+              <label class="input-label" for="email">Email Address</label><br />
+              <input type="text" name="email" id="email" /><br />
+            </div>
+            <div class="user-details-wrapper">
+              <label class="input-label" for="phone">Phone Number</label><br />
+              <input type="text" name="phone" id="phone" />
+            </div>
+          </div>
+          <div class="buttons-container">
+            <button id="previous-step">Go Back</button>
+            <button id="next-step">Next Step</button>
+          </div>
         </div>
         <div id="select-plan-container" class="fill-form-container"></div>
         <div id="add-ons-container" class="fill-form-container"></div>
