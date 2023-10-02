@@ -54,33 +54,136 @@
             </div>
           </div>
         </div>
-        <div id="personal-info-container" class="fill-form-container">
-          <h2 class="step-title">Personal info</h2>
-          <p class="step-description">
-            Please provide your name, email address and phone number.
-          </p>
-          <div class="user-details-container">
-            <div class="user-details-wrapper">
-              <label class="input-label" for="name">Name</label><br />
-              <input type="text" name="name" id="name" /><br />
-            </div>
-            <div class="user-details-wrapper">
-              <label class="input-label" for="email">Email Address</label><br />
-              <input type="text" name="email" id="email" /><br />
-            </div>
-            <div class="user-details-wrapper">
-              <label class="input-label" for="phone">Phone Number</label><br />
-              <input type="text" name="phone" id="phone" />
+        <div class="pages-container">
+          <div id="personal-info-container" class="fill-form-container">
+            <h2 class="step-title">Personal info</h2>
+            <p class="step-description">
+              Please provide your name, email address and phone number.
+            </p>
+            <div class="user-details-container">
+              <div class="user-details-wrapper">
+                <label class="input-label" for="name">Name</label><br />
+                <input type="text" name="name" id="name" /><br />
+              </div>
+              <div class="user-details-wrapper">
+                <label class="input-label" for="email">Email Address</label
+                ><br />
+                <input type="text" name="email" id="email" /><br />
+              </div>
+              <div class="user-details-wrapper">
+                <label class="input-label" for="phone">Phone Number</label
+                ><br />
+                <input type="text" name="phone" id="phone" />
+              </div>
             </div>
           </div>
+          <div id="select-plan-container" class="fill-form-container">
+            <h2 class="step-title">Select your plan</h2>
+            <p class="step-description">
+              You have the option of monthly or yearly billing.
+            </p>
+            <div class="plan-details-container">
+              <div class="plan-prices">
+                <div class="plan-logo">
+                  <img
+                    src="/Resources/multi-step-form-main/assets/images/icon-arcade.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="plan-pricing">
+                  <h6>Arcade</h6>
+                  <p>$9/mo</p>
+                </div>
+              </div>
+              <div class="plan-prices">
+                <div class="plan-logo">
+                  <img
+                    src="/Resources/multi-step-form-main/assets/images/icon-advanced.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="plan-pricing">
+                  <h6>Advanced</h6>
+                  <p>$12/mo</p>
+                </div>
+              </div>
+              <div class="plan-prices">
+                <div class="plan-logo">
+                  <img
+                    src="Resources/multi-step-form-main/assets/images/icon-pro.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="plan-pricing">
+                  <h6>Pro</h6>
+                  <p>$15/mo</p>
+                </div>
+              </div>
+            </div>
+            <div class="plan-toggle-container">
+              <p id="monthly-toggle">Monthly</p>
+              <div class="toggle-switch">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <p id="yearly-toggle">Yearly</p>
+            </div>
+          </div>
+          <div id="add-ons-container" class="fill-form-container">
+            <h2 class="step-title">Pick add-ons</h2>
+            <p class="step-description">
+              Add-ons help enhance your gaming experience.
+            </p>
+            <div class="add-ons-flex-container">
+              <div class="add-ons">
+                <div>
+                  <input type="checkbox" />
+                </div>
+                <div id="name-of-service">
+                  <h6 class="service-of-name">Online service</h6>
+
+                  <p>Access to multiplayer games</p>
+                </div>
+                <div>
+                  <p>+$1/mo</p>
+                </div>
+              </div>
+              <div class="add-ons">
+                <div>
+                  <input type="checkbox" />
+                </div>
+                <div id="name-of-service">
+                  <h6 class="service-of-name">Online service</h6>
+
+                  <p>Access to multiplayer games</p>
+                </div>
+                <div>
+                  <p>+$1/mo</p>
+                </div>
+              </div>
+              <div class="add-ons">
+                <div>
+                  <input type="checkbox" />
+                </div>
+                <div id="name-of-service">
+                  <h6 class="service-of-name">Online service</h6>
+
+                  <p>Access to multiplayer games</p>
+                </div>
+                <div>
+                  <p>+$1/mo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="summary-container" class="fill-form-container"></div>
           <div class="buttons-container">
             <button id="previous-step">Go Back</button>
             <button id="next-step">Next Step</button>
           </div>
         </div>
-        <div id="select-plan-container" class="fill-form-container"></div>
-        <div id="add-ons-container" class="fill-form-container"></div>
-        <div id="summary-container" class="fill-form-container"></div>
       </div>
     </div>
     <script src="main.js"></script>

@@ -17,7 +17,7 @@ body{
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 50vw;
+    width: 55vw;
     transform: translate(-50%,-50%);
     background-color: hsl(0, 0%, 100%);
     gap: 5vw;
@@ -27,10 +27,15 @@ body{
     height: 36rem;
 }
 
+.pages-contianer{
+  text-align: center;
+}
+
 .multi-steps-container{
     background-image: url("/Resources/multi-step-form-main/assets/images/bg-sidebar-desktop.svg");
     padding: 2rem;
-    width: 13rem;
+    width: 15vw;
+    max-width: 13rem;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -82,19 +87,23 @@ body{
 /*This is where i change steps*/
 
 #personal-info-container{
-
+    display: none;
+  padding-right: 3vw;
 }
 
 #select-plan-container{
-    display: none;
+   width: 100%;
+   display: none;
 }
 
 #add-ons-container{
-    display: none;
+    
+    padding-right: 3vw;
 }
 
 #summary-container{
     display: none;
+    padding-right: 3vw;
 }
 
 /*This is where i change steps*/
@@ -108,7 +117,7 @@ body{
 }
 
 .step-description{
-    color: hsl(231, 11%, 63%);;
+    color: hsl(231, 11%, 63%);
 }
 
 /*------------------*/
@@ -119,5 +128,231 @@ body{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 1.6rem;
+    margin-top: 2rem;
 }
+
+input[type="text"]{
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 10px;
+    color: hsl(231, 11%, 63%);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.user-details-wrapper label{
+  font-size: 0.9rem;
+  color: hsl(213, 96%, 18%);
+}
+
+/*----------------------*/
+
+/*--here i style the buttons*/
+
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+
+.buttons-container button{
+   
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    font-weight: 600;
+}
+
+
+
+/*----------------------*/
+
+/*plan container*/
+
+.plan-details-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:1vw;
+    margin-right: 2rem;
+   margin-top: 1.8rem;
+}
+
+.plan-prices{
+    margin-top: 2rem;
+    padding: 2vw;
+    padding-bottom: 1rem;
+    border: 1px solid hsl(213, 96%, 18%);
+    border-radius: 5px;
+    width: 4vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0.8vw;
+    margin-top: 0.5vw;
+}
+
+.plan-logo{
+  margin-top: 0.5rem;
+}
+
+.plan-logo img{
+    width:  2rem;
+  }
+
+.plan-pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: end
+}
+
+.plan-pricing h6{
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.plan-pricing p{
+    margin-top: 0.3rem;
+    margin-bottom: 1.9rem;
+}
+
+
+/*----------------------*/
+
+/*toggle botom*/
+
+.toggle-switch{
+    padding: 0.3rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(213, 96%, 18%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(213, 96%, 18%);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .plan-toggle-container{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:rem;
+    background-color:  hsla(206, 94%, 87%, 0.162);
+    align-items: center;
+    width: 23vw;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+  }
+
+/*----------------------*/
+
+/*add-ons*/
+
+.add-ons-flex-container{
+  margin-top: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-ons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid hsl(213, 96%, 18%);
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  background-color: hsla(206, 94%, 87%, 0.08);;
+}
+
+.service-of-name{
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+#name-of-service p{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  color: hsl(231, 11%, 63%);
+}
+
+#name-of-service{
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 0.4rem;
+  margin-right: 4vw;
+}
+
+/*----------------------*/
